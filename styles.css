@@ -1,0 +1,182 @@
+
+body {
+    background-image: url('img.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+  }
+  
+  
+  .container .btn {
+    position: relative;
+    left: 10%;
+    top: 10%;
+    background-color:grey ;
+    color: black;
+    font-size: 24px;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    animation:Slide_up 2.2s ease;
+    text-decoration:none;
+  }
+  
+  .container .btn:hover  {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    color: white;
+  }
+  
+  
+  @keyframes Slide_up {
+    0%{
+      transform:translateY(250px);
+    }
+    100%{
+      tranform:translateY(0);
+    }
+  }
+
+  
+
+#notification-header {
+	background: #17eccf;
+    margin: 0px 0px 0px 0px;
+	padding: 20px 10px 20px 10px;
+	text-align:right;
+    position: relative;
+}
+button#notification-icon {
+	background: transparent;
+	border: 0;
+	position:relative;
+	cursor:pointer;
+}
+#notification-count{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	font-size: 0.9em;		
+	color: #de5050;
+	font-weight:bold;
+}
+
+
+
+div.demo-content input[type='text'],textarea{
+	width: 100%;
+
+}
+#notification-latest {
+	color: white;
+	position: absolute;
+	right: 10px;
+	background: #17eccf;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.20);		
+	max-width: 250px;
+	text-align: left;
+}
+
+ul {
+    display:block;
+    background:#45619D;
+    list-style:none;
+    margin:0;
+    padding:12px 10px;
+    height:50px;
+}
+ul li {
+    float:left;
+    font:13px helvetica;
+    font-weight:bold;
+    margin:3px 0;
+}
+ul li a {
+    color:#FFF;
+    text-decoration:none;
+    padding:6px 15px;
+    cursor:pointer;
+}
+ul li a:hover {
+    background:#425B90;
+    text-decoration:none;
+    cursor:pointer;
+}
+    
+#noti_Container {
+    position:relative;
+    
+}
+   
+/* A CIRCLE LIKE BUTTON IN THE TOP MENU. */
+#noti_Button {
+    position: fixed;
+    width:22px;
+    height:22px;
+    line-height:22px;
+    border-radius:50%;
+    -moz-border-radius:50%; 
+    -webkit-border-radius:50%;
+    background:#FFF;
+    margin:-3px 10px 0 10px;
+    cursor:pointer;
+    
+}
+    
+/* THE POPULAR RED NOTIFICATIONS COUNTER. */
+#noti_Counter {
+    display:block;
+    position:absolute;
+    background:#E1141E;
+    color:#FFF;
+    font-size:12px;
+    font-weight:normal;
+    padding:1px 3px;
+    margin:-8px 0 0 25px;
+    border-radius:2px;
+    -moz-border-radius:2px; 
+    -webkit-border-radius:2px;
+    z-index:1;
+}
+    
+/* THE NOTIFICAIONS WINDOW. THIS REMAINS HIDDEN WHEN THE PAGE LOADS. */
+#notifications {
+    display:none;
+    width:430px;
+    position:absolute;
+    top:30px;
+    left:0;
+    background:#FFF;
+    border:solid 1px rgba(100, 100, 100, .20);
+    -webkit-box-align:0 3px 8px rgba(0, 0, 0, .20);
+    z-index: 0;
+}
+/* AN ARROW LIKE STRUCTURE JUST OVER THE NOTIFICATIONS WINDOW */
+#notifications:before {         
+    content: '';
+    display:block;
+    width:0;
+    height:0;
+    color:transparent;
+    border:10px solid #CCC;
+    border-color:transparent transparent #FFF;
+    margin-top:-20px;
+    margin-left:10px;
+}
+    
+h3 {
+    display:block;
+    color:#333; 
+    background:#FFF;
+    font-weight:bold;
+    font-size:13px;    
+    padding:8px;
+    margin:0;
+    border-bottom:solid 1px rgba(100, 100, 100, .30);
+}
+    
+
+.data{
+    overflow: auto;
+}
